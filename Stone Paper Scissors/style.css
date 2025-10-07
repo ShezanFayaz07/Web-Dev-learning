@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    color: White;
+    padding: 20px;
+}
+
+.choices {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 165px;
+    height: 175px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 155px;
+    height: 165px;
+}
+
+.score-board {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 30px;
+}
+
+.scores {
+    font-size: 50px;
+}
+
+.mssg {
+    margin-top: 50px;
+}
+
+.mssgpara {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    display: inline;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        padding: 15px;
+        font-size: 24px;
+    }
+    .choices {
+        margin-top: 40px;
+        gap: 30px;
+    }
+    .choice {
+        width: 120px;
+        height: 120px;
+    }
+    img {
+        width: 110px;
+        height: 110px;
+    }
+    .score-board {
+        margin-top: 40px;
+        gap: 40px;
+        font-size: 24px;
+    }
+    .scores {
+        font-size: 40px;
+    }
+    .mssgpara {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        padding: 12px;
+        font-size: 20px;
+    }
+    .choices {
+        margin-top: 30px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .choice {
+        width: 90px;
+        height: 90px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .score-board {
+        margin-top: 30px;
+        gap: 30px;
+        font-size: 20px;
+    }
+    .scores {
+        font-size: 35px;
+    }
+    .mssg {
+        margin-top: 30px;
+    }
+    .mssgpara {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .choices {
+        margin-top: 25px;
+        gap: 15px;
+    }
+    .choice {
+        width: 75px;
+        height: 75px;
+    }
+    img {
+        width: 68px;
+        height: 68px;
+    }
+    .score-board {
+        margin-top: 25px;
+        gap: 25px;
+        font-size: 18px;
+    }
+    .scores {
+        font-size: 30px;
+    }
+    .mssg {
+        margin-top: 25px;
+    }
+    .mssgpara {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
